@@ -1,0 +1,5 @@
+rootProject.name = 'rabbit'
+include 'common'
+include 'produce'
+include 'consume'
+
