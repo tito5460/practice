@@ -1,0 +1,15 @@
+apply plugin: 'org.springframework.boot'
+
+group = 'springcloud'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile project(':common')
+	compile (
+		"org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}"
+    )
+}
