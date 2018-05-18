@@ -1,8 +1,0 @@
-fieldy: tito-yml
-
-level1:
-  level1_1:
-    level1_1_1: value1_1_1
-  level1_2:
-    level1_2_1: value1_2_1
-    level1_2_2: value1_2_2
