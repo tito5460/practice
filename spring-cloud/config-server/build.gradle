@@ -1,0 +1,16 @@
+apply plugin: 'org.springframework.boot'
+
+group = 'springcloud'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile project(':common')
+	compile (
+		//单引号只做字符串拼写，双引号做字符串值的处理！
+    	"org.springframework.cloud:spring-cloud-config-server:${springCloudVersion}"
+    )
+}
