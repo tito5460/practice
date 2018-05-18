@@ -13,7 +13,7 @@ spring:
         git:
           # URI一定要是仓库根目录
           uri: https://github.com/tito5460/practice
-          searchPaths: /tree/master/spring-cloud/config-server/config-demo
+          searchPaths: \tree\master\spring-cloud\config-server\config-demo
           # 如果是公共仓库，用户名、密码可不填
           #username: 
           #password: 

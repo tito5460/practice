@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/h")
 public class HelloController {
 
-	@Value("${server.port}")
-	private String port;
+	@Value("${fieldp}")
+	private String fieldp;
 
 	@RequestMapping("/hello")
 	public ResponseEntity<?> hello() {
-		String str = "Hello, this is eureka client.port:" + port;
+		String str = "Hello, this is config client. field-name: fieldp, field-value: " + fieldp;
 		return ResponseEntity.ok(str);
 	}
 
