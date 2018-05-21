@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    # 必须和配置文件名的开头相同，例如：config-client-dev.properties
+    name: config-client
+  cloud:
+    #Start spring-cloud-config必须配置在bootstrap.yml中
+    config:
+      # 这个name可不填，如果填了，就要和spring.application.name保持一致
+      name: config-client
+      uri: http://localhost:8082/
+      # git分支
+      label: master
+      # 文件名结尾，例如：config-client-dev.properties
+      profile: dev
+    #End

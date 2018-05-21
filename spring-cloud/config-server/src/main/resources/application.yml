@@ -13,7 +13,9 @@ spring:
         git:
           # URI一定要是仓库根目录
           uri: https://github.com/tito5460/practice
-          searchPaths: \tree\master\spring-cloud\config-server\config-demo
+          # 注意github会在目录中间多出/tree/master/！tree/master/spring-cloud/config-server/config-demo是找不到的
+          # 目录开头没有"/"
+          searchPaths: spring-cloud/config-server/config-demo
           # 如果是公共仓库，用户名、密码可不填
           #username: 
           #password: 
