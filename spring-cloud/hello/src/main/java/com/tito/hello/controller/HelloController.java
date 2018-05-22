@@ -1,4 +1,4 @@
-package com.tito.config.client.controller;
+package com.tito.hello.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/h")
 public class HelloController {
 
-	@Value("${fieldp}")
-	private String fieldp;
+	@Value("${server.port}")
+	private String port;
 
 	@RequestMapping("/hello")
 	public ResponseEntity<?> hello() {
-		String str = "Hello, this is config client. field-name: fieldp, field-value: " + fieldp;
+		String str = "Wow, this is Hello Server:" + port;
 		return ResponseEntity.ok(str);
 	}
 

@@ -1,16 +1,15 @@
-package com.tito.eureka.client;
+package com.tito.hello;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-@EnableEurekaClient
-//@EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaClientApplication {
+@EnableEurekaClient
+public class HelloApplication {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientApplication.class, args);
+        SpringApplication.run(HelloApplication.class, args);
     }
     
 }
