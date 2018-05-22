@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "HELLO-1")
+import com.tito.feign.feign.impl.HelloRemoteServiceImpl;
+
+@FeignClient(value = "HELLO-1",fallback = HelloRemoteServiceImpl.class)
 public interface HelloRemoteService {
 
 	@RequestMapping(value = "/h/hello",method = RequestMethod.POST)

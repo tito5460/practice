@@ -11,4 +11,6 @@ dependencies {
 	compile project(':common')
 	compile "org.springframework.cloud:spring-cloud-starter-eureka:${springCloudVersion}"
 	compile "org.springframework.cloud:spring-cloud-starter-feign:${springCloudVersion}"
+	// 仪表盘http://localhost:8085/hystrix
+	compile "org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:${springCloudVersion}"
 }
