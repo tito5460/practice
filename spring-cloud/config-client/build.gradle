@@ -10,4 +10,6 @@ repositories {
 dependencies {
 	compile project(':common')
 	compile "org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}"
+	// 刷新远程config，必须加@RefreshScope注解
+	compile "org.springframework.cloud:spring-cloud-starter-bus-amqp:${springCloudVersion}"
 }

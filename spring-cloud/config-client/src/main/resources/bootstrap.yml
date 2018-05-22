@@ -16,3 +16,25 @@ spring:
       # 文件名结尾，例如：config-client-dev.properties
       profile: dev
     #End
+  rabbitmq:
+    host: localhost
+    port: 5672
+    #username: 
+    #password: 
+  # 关闭自动重启
+#  devtools:
+#    restart: 
+#      enabled: false
+
+#刷新config时，关闭401验证
+management:
+  security:
+    enabled: false
+    
+    
+#暴露接口 
+#management: 
+#  endpoints: 
+#    web: 
+#      exposure: 
+#        include: ["health","info","bus-refresh"] 
