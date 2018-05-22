@@ -13,7 +13,8 @@ public class HelloController {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	
+	//判断controller是单例还是多例
+	//正常情况下，不推荐controller里使用属性
 	private int count = 0;
 
 	@RequestMapping("/hi")
