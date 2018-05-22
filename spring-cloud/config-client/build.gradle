@@ -9,7 +9,5 @@ repositories {
 
 dependencies {
 	compile project(':common')
-	compile (
-		"org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}"
-    )
+	compile "org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}"
 }

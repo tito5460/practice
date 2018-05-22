@@ -9,6 +9,6 @@ repositories {
 
 dependencies {
 	compile project(':common')
-	// 单引号只做字符串拼写，双引号做字符串值的处理！
-	compile "org.springframework.cloud:spring-cloud-starter-eureka-server:${springCloudVersion}"
+	compile "org.springframework.cloud:spring-cloud-starter-eureka:${springCloudVersion}"
+	compile "org.springframework.cloud:spring-cloud-starter-zuul:${springCloudVersion}"
 }

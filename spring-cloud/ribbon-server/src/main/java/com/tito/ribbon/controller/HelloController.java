@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Controller
 @RequestMapping("/ribbon")
+//@RequestMapping("/remote") //测试zuul时使用
 public class HelloController {
 
 	@Autowired

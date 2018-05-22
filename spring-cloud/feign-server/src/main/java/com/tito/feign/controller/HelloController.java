@@ -9,6 +9,7 @@ import com.tito.feign.feign.HelloRemoteService;
 
 @Controller
 @RequestMapping("/feign")
+//@RequestMapping("/remote") // 测试zuul时使用
 public class HelloController {
 
 	@Autowired
