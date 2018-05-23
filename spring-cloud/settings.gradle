@@ -7,5 +7,6 @@ include 'config-client'
 include 'ribbon-server'
 include 'feign-server'
 include 'zuul-server'
+include 'zipkin-server'
 include 'hello'
 

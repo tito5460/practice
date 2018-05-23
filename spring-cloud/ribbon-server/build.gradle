@@ -15,4 +15,6 @@ dependencies {
 	compile "org.springframework.cloud:spring-cloud-starter-hystrix:${springCloudVersion}"
 	// 仪表盘http://localhost:8085/hystrix
 	compile "org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:${springCloudVersion}"
+	// 服务链路追踪
+	compile "org.springframework.cloud:spring-cloud-starter-zipkin:${springCloudVersion}"
 }

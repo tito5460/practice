@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: zipkin-server-1
+  #zipkin收集默认是0.1的比率，启动完，要多试几次。过段时间就有了。也可以通过spring.sleuth.sampler.percentage=1，加快收集比率
+  sleuth:
+    sampler:
+      percentage: 1
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+      

@@ -4,8 +4,11 @@ server:
 spring:
   application:
     name: ribbon-1
+  zipkin:
+    base-url: http://localhost:8083
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8082/eureka/
+
