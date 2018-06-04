@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 注意：tars1.3.0版本，该文件放在resources目录下
+	1.2.0版本，放在webapp/WEB-INF下
+ -->
+<servants>
+    <servant name="CoolChattingObj" protocol="tars" port="7777">
+        <home-api>com.qq.tars.quickstart.server.testapp.HelloServant</home-api>
+        <home-class>com.qq.tars.quickstart.server.testapp.impl.HelloServantImpl</home-class>
+    </servant>
+    <listener>
+        <listener-class>com.qq.tars.quickstart.server.AppStartListener</listener-class>
+    </listener>
+</servants>
