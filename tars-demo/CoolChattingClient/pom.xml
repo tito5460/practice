@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>qq-cloud-central</groupId>
+            <groupId>com.tencent.tars</groupId>
             <artifactId>tars-client</artifactId>
             <version>1.0.3</version>
             <type>jar</type>
@@ -41,7 +41,7 @@
                 </dependencies>
             </plugin>
             <plugin>
-                <groupId>qq-cloud-central</groupId>
+                <groupId>com.tencent.tars</groupId>
                 <artifactId>tars-maven-plugin</artifactId>
                 <version>1.0.3</version>
                 <configuration>

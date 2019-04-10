@@ -17,11 +17,10 @@
     </properties>
     
     <dependencies>
-    	<dependency>
-            <groupId>qq-cloud-central</groupId>
+        <dependency>
+            <groupId>com.tencent.tars</groupId>
             <artifactId>tars-server</artifactId>
             <version>1.0.3</version>
-            <type>jar</type>
         </dependency>
         <!-- tars1.3.0需要引入spring相关jar包，1.2.0则不需要      start -->
         <dependency>
@@ -63,7 +62,7 @@
             <!--<version>2.2</version>-->
             <!--</plugin>-->
             <plugin>
-                <groupId>qq-cloud-central</groupId>
+                <groupId>com.tencent.tars</groupId>
                 <artifactId>tars-maven-plugin</artifactId>
                 <version>1.0.3</version>
                 <configuration>
